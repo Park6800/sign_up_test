@@ -1,0 +1,182 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    background: rgb(245, 246, 247);
+}
+
+.warp_{
+    width: 500px;
+    margin: auto;
+}
+.language{
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.Logo{
+    height: 80px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav{
+    margin-top: 40px;
+}
+.main_chk, .chk{
+    float: left;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #666;
+    border-radius: 50% ;
+    appearance: none;
+}
+.main_chk {
+    margin: 18px 18px 18px 4px;
+}
+.accept{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+}
+.accept_sec{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+}
+
+input[type="checkbox"]:checked {
+    background: #32e732;
+    border: none;
+}
+.terms{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.green_font{
+    color: rgb(0, 200, 80);
+}
+
+section {
+    margin-top: 50px;
+}
+.more_info{
+    justify-content: space-between;
+    display: flex;
+}
+
+.chk_terms{
+    overflow:scroll; 
+    width: 92%;
+    height:150px;
+    border: 1px solid gray;
+    font-size: 12px;
+    padding: 10px 20px;
+    line-height: 2;
+    margin: 10px;
+}
+
+.baby{
+    padding: 5px 10px; 
+    display: inline-block;
+    border: 2px solid rgb(0, 200, 80);
+    color: white;
+    font-size: 10px;
+    background: rgb(0, 200, 80);
+    cursor: pointer;
+}   
+
+.third, .fourth{
+    margin-top: 30px;
+}
+
+.seconde{
+    margin-top: 30px;
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+.terms_info{
+    display: inline-block;
+    padding-top: 10px;
+    color:#666;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.btn_area{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+.cancel, .next{
+    font-size: 18px;
+    color:#fff;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0 15px;
+    width: 49%;
+    background: gray;
+    border: 0px;
+    cursor: pointer;
+}
+.next{
+    background: rgb(0, 200, 80);
+}
+
+.group_join{
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.group_join a{
+    color:#000;
+    text-decoration: underline;
+}
+
+.fot_top ul li{
+    float: left;
+}
+
+.fot_top ul li a{
+    color: #000;
+    font-size: 14px;
+}
+
+.fot_top ul li:nth-child(n+2) {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fot_top ul li:nth-child(n+2)::after {
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: gray;
+}
+
+.fot_bot{
+    text-align: center;
+    font-size: 11px;
+    padding: 30px;    
+}
+.error{
+    margin-top: 10px;
+    color:red;
+    font-size: 14px;
+}

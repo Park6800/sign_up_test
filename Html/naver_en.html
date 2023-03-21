@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 : 회원가입</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../js/naver.js"></script>
+    <link rel="icon" href="../img/clone.ico">
+
+</head>
+
+<body>
+    <div class="language"><select class="sel_lang" onchange="change_page()" id="cg_page">
+            <option value="ko">한국어</option>
+            <option value="en"selected>영어</option>
+            <option value="jp">일본어</option>
+        </select></div>
+    <div class="warp_">
+        <header>
+            <div class="Logo">
+                <img src="../img/logo.png" width="260px" height="60px">
+            </div>
+        </header>
+        <nav>
+            <input type="checkbox" class="main_chk" onclick='selectAll(this)' id="selectAll">
+            <div class="terms">
+                Agree to all of the following terms and conditions of NAVER: Terms of Service; Privacy Policy; the Terms
+                of Use of Location-based Services (optional); Receive promotional information (optional).
+            </div>
+        </nav>
+        <section>
+            <div class="first">
+                <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)" id="vital_chk1">
+                <div class="accept">Terms of Service<span class="green_font">(Required)</span></div>
+                <div class="chk_terms">
+                    Welcome to Naver!
+                    Thank you for using our services and products (“Naver Service(s)” or “Service(s)”). These NAVER
+                    Terms of Service define the relationship between Naver Corporation (“Naver”), which provides Naver
+                    Services, and members of Naver (“Member(s)”) or non-members, who use such Services, with regard to
+                    the use of various Naver Services, and contain useful information which may help you use Naver
+                    Services.
+
+                    By using our Services, you are deemed to have been notified of NAVER Terms of Service, and by
+                    signing up as a Member, you are deemed to agree to be bound by these NAVER Terms of Service and
+                    additional relevant operation policies. Please take a moment to read these NAVER Terms of Service
+                    carefully.
+
+                    Enjoy various Naver Services.
+                    Naver provides a variety of Services that can make your life more convenient such as information
+                    searching, communication with other users, provision of contents and shopping, through Naver domain
+                    websites including www.naver.com and applications (apps). You can freely use various Naver Services
+                    through different kinds of devices used to access the Internet such as PCs and mobile phones, and
+                    you may easily check the details of individual Services provided under Information and Notice
+                    sections for each Service, and Help section on Naver Web Customer Center (“Customer Center”).
+
+                    Naver provides the same service contents to all of you in principle. However, in certain
+                    circumstances, it partially restricts use of its Services by providing different service contents
+                    and restricting the permitted time for use and frequency of use of its Services pursuant to
+                    applicable laws and regulations such as the Juvenile Protection Act or other special need in
+                    providing individual services. For more information, please refer to Information and Notice sections
+                    under each Service and Help section under the Customer Center.
+
+                    While these NAVER Terms of Service apply to Naver Services by default, there are circumstances for
+                    which additional or individual terms and conditions or operation policies may apply in providing
+                    various Naver Services (e.g., Naver Pay and V LIVE). Moreover, for certain services provided by
+                    Naver’s affiliates (e.g., LINE and SNOW), such affiliates’ own terms and conditions or operation
+                    policies may apply. Please refer to such details provided on the startup page of each Service.
+
+                    By signing up as a Member, you can use Naver Services more conveniently.
+                    You may sign up to be a Member after reading and providing your consent to these NAVER Terms of
+                    Service. Naver completes the registration process by providing its approval and provides a Naver
+                    Service user account (“Account”). An account is a member authentication unit set up to manage
+                    history of each user’s usage of various Services once the Member logs in to Naver Services.
+
+                    Members may use their accounts to enjoy various Naver Services in a more convenient way. For more
+                    details, please refer to our user account policy and Naver Registration Method member registration
+                    method within the Customer Center.
+
+                    Naver also provides group accounts so that members of a group may use Naver Service under a common
+                    account shared among such members. Individuals using the group account share a single account and ID
+                    but log in to the account and use various Services by entering individually set passwords. A group
+                    member can either be a manager or a member, and other members delegate an authority to the manager
+                    to represent the group members as well as manage the group member account. Accordingly, the manager
+                    may provide consent to additional terms and conditions or an amendment of the existing NAVER Terms
+                    of Service or withdraw from group membership with the group member account, and manage other
+                    members’ use of Naver Services such as members’ log-in method for group member account and posts
+                    (including deletion of posts). In principle, these NAVER Terms of Service shall be applied to all
+                    members, and each member shall bear joint and severable liability for other members’ use of service
+                    through the group account and ID.
+
+                    Please check our user account policy and the Introduction to Naver group membership (group ID)
+                    within the Customer Center for details related to rights and joint liability of managers and members
+                    when using the group account.
+
+                    We will value all contents provided by you.
+                    Naver hopes your posts shared with other users through Naver Services will enrich the lives of all
+                    of us. Posts refer to various contents or files composed of signs, texts, voices, sounds, pictures,
+                    photographs, videos, links, etc. that you post on Naver Services in order to show them to yourself
+                    or others.
+
+                    Naver promises to safely protect the contents that express your thoughts and emotions. Of course,
+                    you have your own rights such as intellectual property rights regarding the posts that you create
+                    and post.
+
+                    Meanwhile, in order to duly provide the posts that you have posted through Naver Services, Naver
+                    needs to have a legitimate right to use your contents such as a license to store, copy, reproduce,
+                    modify, publicly transmit, display, distribute, and create derivative works (only limited to
+                    translation) of such contents (license without any restriction on term or territory and royalty
+                    free). Since you will be granting Naver such license by posting the content, you must have the
+                    necessary rights to do so.
+
+                    Pursuant to applicable laws such as the Copyright Act of the Republic of Korea, Naver will exercise
+                    such license granted by you, to use your contents, only to the limited extent of exposing the
+                    contents within Naver Services, utilizing them for promotion of Services, conducting research and
+                    development on service operation, improving and developing new services; complying with legal
+                    obligations such as web accessibility; allowing search, collection and links from other sites. If
+                    Naver unavoidably needs to use your contents for other purposes, we will explain it to you and
+                    receive your consent in advance.
+
+                    Moreover, valuable contents that you provide may be used by Naver and its affiliates for purposes of
+                    research and development related to artificial intelligence technology, etc. in order to improve
+                    Naver Services and offer new Naver Services. Naver will do its best to provide you with more
+                    convenient and useful service through continuous research and development.
+
+                    Naver is committed to providing various means of making it easier for you to manage Naver or other
+                    users’ use of or access to the contents that you provide. If management functions to delete or make
+                    your contents private are provided within the Naver service, you may directly control others’ use of
+                    or access to your contents. Also, you may request measures to delete, make your contents private, or
+                    exclude your contents from search results to the Customer Center. However, for some Naver Services,
+                    it may be difficult to delete or make your contents private, so please check the details provided by
+                    Information and Notice sections under each Service and Help section under the Customer Center.
+
+                    We safely protect your personal information.
+                    To provide more convenient Services to users, Naver collects and uses Members’ personal information
+                    only to the extent of purposes and scope agreed by the Member and safely manages such personal
+                    information pursuant to applicable laws and regulations related to the protection of personal
+                    information. Naver’s efforts or other details related to safely processing relevant personal
+                    information of users and Members can be found in our Privacy Policy.
+
+                    If you do not have a log-in or access record for a certain period of time, Naver may destroy or
+                    separately store your information after providing prior notice through e-mail, notification within
+                    the Services or other appropriate electronic means, and if there is insufficient information
+                    necessary to provide the Services as a result, Naver may unavoidably terminate the relevant service
+                    agreement.
+
+                    Please respect the rights of others.
+                    Posts you casually put on may result in infringement of rights of others such as infringement of
+                    copyright or defamation. In order to solve such problem, Naver manages Request for Notice and
+                    Take-down Service, pursuant to which a post may be taken down upon the request of the right-holder
+                    or posted again when the original poster made an objection, based on applicable laws such as the
+                    “Information and Communications Network Act” and “Copyright Act”. For more information about the
+                    details and procedures, please refer to Introduction to Request for Notice and Take-down Service
+                    within the Customer Center.
+
+                    Meanwhile, when you use others’ contents through Naver Services, this does not mean that you have
+                    the intellectual property right over such contents. In order to freely use such contents, special
+                    caution is required as such use must be within the scope permitted by applicable laws such as the
+                    Copyright Act or you need separate permission from the person holding the intellectual property
+                    right to use such contents.
+
+                    Naver grants you the authority to use relevant software accompanying Naver Services so that you can
+                    fully utilize Naver Services. In this case, please note that you are free to use such software only
+                    to the extent that it complies with Naver’s Terms of Use, that such authority is non- transferable,
+                    and that non-exclusive terms and Legal Notification will apply.
+
+                    Take advantage of the various Points that Naver offers.
+                    Naver provides points to help you use Naver Services efficiently. Points mean virtual data on
+                    Services with certain calculation unit which Naver provides in conjunction with your use of Naver
+                    Services by arbitrarily setting or adjusting the value. They do not have any property value and thus
+                    cannot be converted into cash or provided as a refund, but there are cases when the amount of points
+                    you have may affect your use of Naver Services, so please feel free to use them appropriately
+                    depending on each circumstance.
+
+                    Naver may unavoidably have to adjust a part or all points after notifying you in advance if such
+                    adjustment is necessary to support efficient use of Naver Services or improve service operation. In
+                    addition, points may be extinguished on a regular basis based on the period designated by us, so
+                    please be mindful of this while you are using Naver service.
+
+                    There are some precautions you should keep in mind with regard to use of Naver Services.
+                    Naver is trying its best so that you can freely and conveniently enjoy Naver Services. However, we
+                    need your help and cooperation in order to ensure safer use of Naver Services and to ensure respect
+                    and protection of the rights of you and others. Your posting or use of Naver Services may
+                    unavoidably be limited for to ensure safe use of Services and protection of rights in the following
+                    events, so please check and comply with the following.
+
+                    You should not provide false information regarding your name, date of birth, mobile phone number,
+                    etc. when you sign up as our member. Please make sure that the information registered in your member
+                    account is accurate and up-to-date. You should not sell, transfer, lend or provide your account as
+                    security or allow others to use it. Also, you should not use another person’s account which does not
+                    belong to you without permission. For detailed information, please refer to account policy.
+                    Posts that directly or expressly threaten to physically harm others, posts that encourage or
+                    recommend self-harm or suicide to others, posts that expose undisclosed personal information such as
+                    personal identity or personal life of others, posts that constantly bully or harass others, posts
+                    that suggest, broker, induce or force prostitution, and posts that present a direct and severe
+                    threat to public safety may be restricted.
+                    Posts identified as directly related to crime such as performing or aiding and abetting acts that
+                    are prohibited or subject to criminal sanctions under applicable laws, posts that promote, advertise
+                    or sell products or services which are prohibited from being promoted, advertised, or sold pursuant
+                    to applicable laws, and posts identified as infringing another person’s intellectual property right
+                    or violating another person’s rights through insults, invasion of privacy or defamation may be
+                    subject to limitation.
+                    Posts that cause sexual humiliation or development of distorted view towards sexuality by depicting
+                    provocative and explicit sexual activities, posts that contain violent and stimulating contents
+                    which may cause sense of brutality or displeasure, posts that deceive another person by
+                    impersonating someone other than oneself or raising a false claim, and posts that cause serious
+                    feeling of aversion or displeasure by continuing to use excessive profanity and abusive language may
+                    be restricted.
+                    Posts that were posted through abnormal use of Naver service functions such as utilization of
+                    automated means and posts that do not correspond with the purpose of providing Service by each
+                    individual Naver Service may also be subject to restriction as they cause inconvenience to other
+                    users’ normal use of Naver service as well as interfere with Naver’s smooth provision of Services.
+                    For details of other posts that are subject to restriction, please refer to posting operation policy
+                    and each individual service’s terms and conditions and operation policy of each individual Service.
+                    Users should not use Naver Services in ways which do not correspond with Naver’s purpose of
+                    providing its services, which is based on the premise that it is the certain user (person) himself
+                    or herself that actually uses Naver’s Services, such as joining or attempting to join as a Member,
+                    logging in or attempting to log in to Naver service, posting or attempting to post on Naver Service,
+                    engaging in communication through Naver service (e.g., e-mail, messages), collecting ID or posts on
+                    Naver Services, searching with certain query terms on Naver search service or selecting (i.e.,
+                    click) certain item among the search results by using automated means (e.g., macro program, robot
+                    (bot), spider, scraper, etc.) without the prior permission from Naver, or attempt to disable Naver’s
+                    technical measures to block such abuse of Naver Services (e.g., accessing by constantly changing
+                    IPs, making a detour or disabling Captcha through external solution, etc.).
+                    Users should not insert various contents or files composed of signs, texts, voices, sounds,
+                    pictures, photographs, videos, links, etc. in spaces where advertisements are posted or other spaces
+                    on Naver Services by using automated means without the prior consent of Naver. In addition, users
+                    may not copy, modify, sell, transfer, lend, provide as security or give another person the
+                    permission to use Naver Services or software contained in Naver Services. Reverse engineering,
+                    attempting to extract source code, copying, deconstructing, imitating or otherwise altering the
+                    software contained in Naver Services is also prohibited (however, if the software is an open source,
+                    its own terms and conditions will apply). Moreover, uploading viruses or other malicious codes or
+                    abnormal use of service functions in order to interfere with smooth operation of Naver Services is
+                    prohibited.
+                    Naver provides support to ensure stable and smooth use of Services through provision of posting
+                    operation policy, terms and conditions or operation policy under each individual Service,
+                    Information and Notice sections under each Service and Help section under the Customer Center,
+                    within the scope of these NAVER Terms of Service. Each specific policy contains more detailed
+                    precautions for your reference, so please check each policy using the links provided in the main
+                    body of these NAVER Terms of Service and applicable webpages.
+
+                    If Naver has to restrict the use of Services for inevitable reasons, it will comply with reasonable
+                    procedures.
+                    While Naver promises to handle your contents containing various information and opinion with care,
+                    if your post is in violation of applicable laws or any terms in these NAVER Terms of Service Naver
+                    may delete or make such contents private contents or refuse to post such contents. However, this
+                    does not mean that Naver is obligated to review all contents.
+
+                    Moreover, if you do not comply with applicable laws or violate any provisions in these NAVER Terms
+                    of Service, Naver may check the details of your related action, and depending on the results,
+                    provide precautions regarding the use of Naver Services or restrict the use of Services by
+                    suspending a part or all of Naver Services on a temporary or permanent basis. If Naver believes that
+                    it would be difficult to maintain the NAVER Terms of Service as a whole even after restricting the
+                    use of Services as provided above, Naver may inevitably terminate these NAVER Terms of Service
+                    entered into between you and NAVER.
+
+                    If we have to restrict your use of Services for unavoidable reasons, we will follow the
+                    above-mentioned step-by-step principle regarding restriction on use of Services unless matters that
+                    require urgent actions to prevent risks or damages are involved due to apparent violation of laws or
+                    infringement of another person’s rights. Please be mindful that all points and other benefits
+                    acquired through the use of Services will be extinguished and not separately be compensated in the
+                    event of our immediate suspension of Services on a permanent basis unavoidably due to apparent
+                    violation of laws. For conditions of restriction on the use of Services and other details, please
+                    refer to account policy and operation policy under each individual Service.
+
+                    Naver will take responsibility for its own fault.
+                    If you suffer from any damage while using Naver Services due to willful misconduct or negligence of
+                    Naver, Naver will compensate your damages pursuant to applicable laws. However, Naver will not be
+                    liable for any damages that were incurred because Naver was unable to provide its Services due to
+                    any force majeure events or user was unable to use the Services due to his/her own willful
+                    misconduct or negligence.
+
+                    Even in the case where Naver is liable for damages, Naver shall not be liable for special damages,
+                    indirect damages, or other punitive damages that are normally impossible to foresee or those that
+                    arise from special circumstances, unless there is a special provision in applicable laws.
+
+                    Meanwhile, unless there are special circumstances, Naver shall not be liable for damages incurred by
+                    exchange of opinion, transaction, etc. between you and other members by the medium of Naver service
+                    or damages incurred by depending on contents such as other person’s posts that were posted on the
+                    service.
+
+                    You may terminate these NAVER Terms of Service at any time.
+                    Although it is a pity for Naver, members may apply for termination of this Term of Service and
+                    withdraw from Naver membership at any time, and in such case, Naver shall process such application
+                    pursuant to applicable laws, etc. without delay.
+
+                    Upon termination of these NAVER Terms of Service, all data of Members including all posts related to
+                    the member’s account will be deleted and become irrecoverable unless applicable laws and the privacy
+                    policy allow Naver to retain a certain user’s information. However, even in this case, posts
+                    separately stored or scrapped by other members or replies registered in public bulletin board will
+                    not be deleted, so please delete such posts before you apply for termination and then deactivate
+                    your membership.
+
+                    Certain Naver Services contain advertisements.
+                    While using various Naver services, you may notice that some individual Services contain
+                    advertisements from time to time. You are responsible for any data telecommunications fees incurred
+                    while using Naver Services pursuant to a data plan of a telecommunications service provider that you
+                    subscribe to, and you are also responsible for any additional fees incurred while viewing the
+                    advertisements contained in such Services.
+
+                    There are circumstances where you need to watch unwanted advertisements in order to use the Naver
+                    Services that you would like to use. This allows Naver to provide its various Services free of
+                    charge, and this also becomes the basis for providing better Services by allowing Naver to invest in
+                    research and development. The fact that other companies have been charging users for use of the main
+                    services while emphasizing services without advertisements supports this point.
+
+                    Naver will always try to think of ways to minimize your inconvenience or burden on you and make
+                    improvements.
+
+                    Naver will make sure to notify you of any suspension or modification of its Services.
+                    While Naver is trying its best to provide its Services in a stable manner, 24 hours a day, all year
+                    around, Naver may have no other choice but to suspend its Services in part or in whole if there are
+                    any significant operational issues such as repair, inspection, replacement or disconnection of
+                    information communication facilities such as computers or servers.
+
+                    Meanwhile if there is a significant need for service operation or improvement, Naver may change,
+                    modify or terminate Services in part or in whole. If Services are changed, modified or terminated in
+                    whole or in part, Naver shall not make any separate compensation unless there is a special provision
+                    in applicable laws.
+
+                    In this case, if the event can be foreseen, Naver shall provide prior notification before a
+                    considerable period of time, and if the event cannot be foreseen, Naver shall provide an ex post
+                    facto notification and detailed explanation regarding the situation without delay. Also, if the
+                    services are suspended, Naver shall provide you reasonable and sufficient opportunities to back up
+                    your own contents.
+
+                    Naver will guide you through the main points and pay attention to your valuable opinion.
+                    Naver will make every effort to provide important information necessary for using the Services in a
+                    timely manner. When notifying its Member, Naver will provide individual notice through e-mail,
+                    notification within the Services or other appropriate electronic means. If notification to all
+                    Members is necessary, however Naver will post relevant information on the startup page of Naver
+                    domain’s websites such as www.naver.com and applications (apps) or through its announcements, for
+                    more than seven days.
+
+                    Naver will pay attention to your valuable opinion. You may at any time provide your opinion or
+                    communicate matters requiring improvement related to the use of Services through the Customer
+                    Center, and Naver will provide an update on how it handles such matters and the results to the
+                    reasonable extent.
+
+                    Naver posts these NAVER Terms of Service and operation policies so that you can easily notice them
+                    and makes modifications after providing prior notification.
+                    Naver displays these NAVER Terms of Service on its startup page so that you can easily see detailed
+                    NAVER Terms of Service.
+
+                    Naver may modify these NAVER Terms of Service as well as account policies and posting operation
+                    policies from time to time, provided that such modifications will only be made to the extent they do
+                    not violate any applicable laws and Naver will notify Members of reasons for such modifications and
+                    the effective date of such modifications within the Services in advance. Moreover, in the event of
+                    material modifications of these NAVER Terms of Service that may put you at a disadvantage, Naver
+                    shall make notifications of such modifications at least 30 days in advance within the applicable
+                    Services, and provide an individual notice to you through separate electronic means (e-mail,
+                    notification within the Services, etc.).
+
+                    Naver waits for your comments on modifications from the date Naver posts the modified terms and
+                    conditions until the effective date of such modifications. If your comments are not received during
+                    the above time period, you will be deemed to have consented to using the Services pursuant to the
+                    modified terms and conditions. Although Naver is not happy about this, Naver may not be able to
+                    provide applicable Services that are subject to the modified terms and conditions to you anymore if
+                    you do not consent to the modified terms and conditions.
+
+                    While these NAVER Terms of Service apply to Naver Services by default, sometimes additional terms
+                    and conditions or operation policies other than these NAVER Terms of Service may additionally apply
+                    in order to reflect unique characteristics of individual Services. Therefore, in the event of any
+                    conflict between the additional terms and conditions or account policies or posting operation
+                    policies and these Terms of Service regarding the provision of such individual Services, the
+                    additional terms and conditions and operation policies shall prevail. Please check the details
+                    provided on the startup page of each individual Service.
+
+                    This English version of the NAVER Terms of Service is a translation based on the original Korean
+                    version of the NAVER Terms of Service. If there is any conflict between these two versions, the
+                    original Korean version of the NAVER Terms of Service shall prevail. The relationship between you
+                    and Naver in relation to the NAVER Terms of Service or Naver Services shall be governed by the laws
+                    of Republic of Korea, and any dispute arising between you and Naver arising out of or in connection
+                    with the NAVER Terms of Service or Naver Services, shall be resolved in accordance with the
+                    procedures set out in the Civil Procedure Act of Republic of Korea.
+
+                    Date of announcement: March 30, 2018
+                    Effective date: May 1, 2018
+                    If you have any inquiries about Naver Services, please contact Customer Center (contact number:
+                    1588-3820/ open weekdays 09:00~18:00).
+                </div>
+                <div class="seconde">
+                    <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)" id="vital_chk2">
+                    <span class="more_info">
+                        <div class="accept_sec">Privacy Policy<span class="green_font">(Required)</span></div>
+                        
+                    </span>
+                    <div class="chk_terms">
+                        1. Collected Personal Information
+                        Users may now access the majority of NAVER services available to members, such as information
+                        searches or viewing news articles, without the need to sign up for membership. Where a user
+                        signs up with NAVER to access personalized or membership services, including email, calendar,
+                        café, or blog services, only a minimal amount of personal information required for service use
+                        is collected.
+
+                        The personal information collected by NAVER at the time of signing up for membership is provided
+                        below.
+                        - When a user signs up to NAVER, user ID, password, name, date of birth, gender, and mobile
+                        phone number used for membership verification are required for collection. If the date of birth
+                        provided by the user indicates that a user is a minor under the age of 14, the information of
+                        the legal representative, including his/her name, date of birth, gender, duplication information
+                        (DI) and mobile phone number, is also collected. The user may choose whether to provide his/her
+                        email address, profile information.
+                        - When an organization signs up to NAVER, the organization’s ID, password, official name, email
+                        address, and mobile phone number used for membership verification are required for collection.
+                        The name of the organization’s representative may also be optionally collected at the discretion
+                        of NAVER members.
+                        - In countries other than Korea, users may join using their Facebook, LINE, or Apple ID.
+                        Personal information stated above will not be collected when users join using their social media
+                        ID. The following personal information will be collected when users join using social media ID:
+
+                        Facebook : (Required) Name, profile picture, (Optional) Email address
+                        LINE : (Required) Name, profile picture, mobile phone number, list of friends, (Optional) Email
+                        address
+                        Apple : (Required) Name, (Optional) Email address
+
+                        The following personal information is collected while users use the service.
+                        - Your profile information (nickname, profile picture) can be set in your member information or
+                        individual services. When a nickname is not entered, the masked ID will be automatically entered
+                        as the nickname.
+
+                        - Additional personal information may be collected from users of specific NAVER services while
+                        the user uses the service, participates in an event or applies for a prize. If additional
+                        personal information is collected, the user is provided with guidelines on the ‘collected
+                        personal information, the purpose of collecting and using personal information, and the personal
+                        information storage period’ and is asked whether the user agrees to the collection and use of
+                        the information.
+
+                        The IP address, cookies, service usage records, device information, and location information may
+                        be generated and collected during service use. Also, for search services, etc. using images or
+                        voice data, images or voice data may be collected.
+                        Specifically, 1) during the process of using the service information on the user is
+                        automatically created and stored (collected), or
+                        2) the user’s unique device information is safely transformed so that the original values cannot
+                        be identified and the data is collected in this manner.
+                        Location information may be collected during the course of using services, and location-based
+                        services offered by NAVER are regulated in detail in the “Terms of Location-Based Service.”
+                        The information collected as described above may or may not be considered “personal
+                        information,” depending on whether or not it has a connected to other personal information, etc.
+
+                        2. Use of the Collected Personal Information
+                        NAVER uses personal information only for purposes described below, which includes managing
+                        subscribers, developing, providing and improving services of NAVER and NAVER- related services
+                        (including mobile web/app), and creating a safe internet user environment.
+                        - Personal information is used to confirm user’s intent to subscribe to NAVER, verify the user’s
+                        age and consent from the user’s legal representative verify the identity of the user and legal
+                        representative, identify the user, confirm the user’s intent to unsubscribe from NAVER, and for
+                        other subscriber management purposes.
+                        - Personal information is used to provide existing services, including contents and
+                        advertisement, and also used to analyze demographic data, service visitations and use records,
+                        create relationships between users based on users’ personal information and areas of interest,
+                        provide customized services based on information on friends and areas of interest, and discover
+                        other elements that can be used to develop new services and/or improve existing services.
+                        - Personal information is used to restrict users who have violated laws, regulations and NAVER’s
+                        User Agreement from using the service, prevent and restrict actions that interfere with seamless
+                        service operation, including any delinquent actions, prevent account fraud and illegal
+                        transactions, deliver notices on agreement updates, store records on dispute mediation, handle
+                        civil petitions and for other user protection and service operation purposes.
+                        - Personal information is used to verify the user’s identity when providing premium services,
+                        make purchases and payments and to deliver product and services.
+                        - Personal information is used to provide information on events and provide opportunities to
+                        participate, to provide advertisement and for other marketing and promotion purposes.
+                        - Personal information is used to analyze service use records and access frequencies, calculate
+                        statistics on service use, analyze services and provide customized services based on statistics,
+                        and place advertisements.
+                        - Personal information is used to relieve users in circumstances that involve security, privacy
+                        and safety and to build a usable service environment.
+                        3. Destruction of Personal Information
+                        As a rule, the Company destroys personal information immediately after the user unsubscribes
+                        from the service.
+                        However, personal information can be stored safely for a designated amount of time, even after
+                        the user unsubscribes, if NAVER has obtained separate consent from the user to store the
+                        personal information for a certain amount of time, or if the Company is obligated by law to
+                        store the information for a specific time period.
+
+                        NAVER will obtain separate consent from the user for personal information storage for a
+                        specified period for the following purposes.
+                        - To prevent any fraudulent subscription and use
+                        Mobile phone number or duplicate information (DI) of fraudulent users for subscription
+                        verification (legal representative’s DI for users aged 14 or under) : Stored for 6 months from
+                        the date of withdrawal
+                        Mobile phone number of users withdrawn from membership (one-way encryption that cannot be
+                        decrypted via hashing): Stored for 6 months from the date of withdrawal
+                        - Response to QR code recovery request
+                        QR code registration data: Stored for 6 months from the time of deletion
+                        - Response to Smart Place dispute resolution and customer inquiries
+                        Mobile phone number: Up to 1 year from the time of registration/modification/deletion request
+                        - Prevention of duplicate NAVER+ membership service benefits
+                        Encrypted DI (via hashing): Stored for 6 months from the end date of the provided benefit
+                        - For an application for re-subscription to KnowledgeIN eXpert and to prevent any fraudulent use
+                        Registered information for subscription to eXpert service and eXpert Center : Stored for 6
+                        months from the date of application (if registration has been rejected, 30 days from the date on
+                        which the intention to reject was expressed)
+                        Relevant statutes, including the Act on the Consumer Protection, in Electronic Commerce, Etc.,
+                        the Framework Act on Electronic Documents and Transactions, and the Protection of Communications
+                        Secrets Act, require NAVER to store the information for a certain period of time under the
+                        following circumstances. NAVER stores personal information during the set period under the
+                        provisions of the statutes and in no case will it ever store this information for any other
+                        purposes.
+                        - Act on the Consumer Protection in Electronic Commerce
+                        Records on subscription or withdrawal of subscription: Store for five (5) years
+                        Records on payment settlements and supply of goods: Store for five (5) years
+                        Records on customer complaints or dispute settlements: Store for three (3) years
+                        - Framework Act on Electronic Documents and Transactions
+                        Records on the distribution of electronic documents through authorized electronic addresses :
+                        Stored for 10 years
+                        - Electronic Signature Authentication
+                        Record of authentication certificate and tasks on authentication : Stored for 10 years from the
+                        date on which the certificate becomes invalid
+                        - Protection of Communications Secrets Act
+                        Records on sign-in: Store for three (3) months
+                        Personal information is immediately destroyed to an un-restorable state once the purpose of
+                        collecting and storing personal information is fully served, which includes the user’s
+                        membership cancellation, service termination, and/or expiration of the personal information
+                        storage period that was approved by the user. Personal information stored under the law is
+                        immediately destroyed to an un-restorable state once the storage period is expired.
+
+                        Personal information stored in electronic form is safely deleted using a technical approach to
+                        prevent it from being restored or regenerated while written information is shredded or
+                        incinerated.
+
+                        Note that NAVER separately stores and manages the personal information of users who have not
+                        used its service for one year or longer in compliance with the Personal Information Validity
+                        Period Plan.
+
+
+                        Check out Privacy Policy for more information
+                    </div>
+                    <div class="third">
+                        <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)">
+                        <div class="accept">Consent to the Terms of Use of Location-based Services<span class="green_font">(Optional)</span></div>
+                        <div class="chk_terms">
+                            If you agree to the Terms of Use of location-based services, you may use NAVER’s
+                            location-based services, including receiving promotional information using your location.
+
+                            Article 1 (Purpose)
+                            The purpose of this agreement is to stipulate the rights, obligations and responsibilities,
+                            and other necessary matters between NAVER Corporation (hereinafter referred to as the
+                            “Company”) and the subject of personal location information in terms of the location-based
+                            services provided by the Company.
+                            Article 2 (Working Rules Other Than the Terms of Use)
+                            Matters not specified herein shall comply with the Act on the Protection and Use of Location
+                            Information, Personal Information Protection Act, Act on Promotion of Information and
+                            Communications Network Utilization and Information Protection, Framework Act on
+                            Telecommunications, Telecommunications Business Act and other relevant regulations, terms of
+                            use and privacy policy of the Company, and other guidelines as set forth by the Company.
+                            Article 3 (Description and Pricing of Services)
+                            ① The Company, upon receiving location information from the location information provider,
+                            shall provide the following location-based services:
+
+                            1. GeoTagging service: the location information of a subject of personal location
+                            information or mobile device included in a post or content saved by the user is stored with
+                            the post. The stored location information may be preserved without additional usage, or may
+                            be used to provide features that categorizes or searches for content based on location;
+                            2. Search result and content using location information: where there is a request for
+                            information search, or where the location information of the subject of personal location
+                            information or mobile device is provided, such location information is used to provide
+                            search result, result of nearby location search (popular restaurants, nearby businesses,
+                            means of transportation, etc.), and translation result;
+                            3. Advertisement using user location: in the process of using search result or other
+                            services, the location of the subject of personal location information or mobile device is
+                            used to present advertising materials;
+                            4. Protection of users and prevention of abuse: the location of the subject of personal
+                            location information or mobile device is used to prohibit any unauthorized individual from
+                            attempting to use services abnormally, etc.;
+                            5. Provision of convenience services such as directions: optimal routes including traffic
+                            information, directions, etc. are offered on a map, and locating nearby facilities, news and
+                            weather information, emergency rescue service, automatic address completion and other
+                            convenience services shall be provided.
+                            ② Location-based services under paragraph (1) shall be offered free of charge.
+                            Article 4 (Rights Held by Subjects of Personal Location Information)
+                            ① The subject of personal location information may defer their consent for part of the scope
+                            of the collection of personal location information and the terms of use, or the usage and
+                            purpose of personal location information, scope of the recipient of personal location
+                            information, and part of location-based services.
+                            ② Any subject of personal location information may fully or partially withdraw their consent
+                            to the collection, use and provision of personal location information.
+                            ③ Any subject of personal location information may request, at any time, a temporary
+                            suspension on the collection, use and provision of personal location information. In such
+                            case, the Company shall not refuse such request and shall take technical measures
+                            accordingly.
+                            ④ Any subject of personal location information may request the Company to permit them to
+                            inspect any of the following data or to give notice of any of the following data, and may
+                            request the Company to correct an error found in the concerned data. In such case, the
+                            Company shall not reject such request without good cause:
+
+                            1. Data verifying the collection, use and provision of personal location information which
+                            relates to the subject of personal location information;
+                            2. The ground on which the personal location information of the subject of personal location
+                            information was provided to a third party pursuant to the provisions of the Act on the
+                            Protection and Use of Location Information or other Acts, and the relevant details.
+                            ⑤ Where the subject of personal location information fully or partially withdraws their
+                            consent, the Company shall, without delay, destroy the collected personal location
+                            information and the data verifying the collection, use and provision of location
+                            information. Notwithstanding the foregoing, where the subject of personal location
+                            information partially withdraws their consent, such destruction of data is limited to the
+                            personal location information and the data verifying the use and provision of location
+                            information for the part withdrawn.
+                            ⑥ In order to ensure the subject of personal location information exercises their rights
+                            under paragraph (1) or paragraph (4), the subject of personal location information may use
+                            the contact information under Article 13 of this agreement to make requests to the Company.
+                            Article 5 (Rights Held by Legal Representatives)
+                            ① Where the Company intends to collect, use or provide personal location information from
+                            children under 14 years of age, the Company shall obtain the consent of the child under 14
+                            years of age and their legal representative.
+                            ② Where legal representatives provide their consent to the collection, use and provision of
+                            personal location information of children under 14 years of age, they may exercise the right
+                            to defer consent, right to withdraw and suspend consent, and right to request inspection and
+                            notification.
+                            Article 6 (Grounds for and Period of Retaining Data Verifying the Usage and Provision of
+                            Location Information)
+                            In accordance with Article 16 (2) of the Act on the Protection and Use of Location
+                            Information, the Company shall automatically record data verifying the collection, use, and
+                            provision of location information in a location information system, and preserve the data
+                            for 6 months or longer.
+                            Article 7 (Changes to and Termination of Services)
+                            ① Where it becomes impossible for the Company to maintain its services due to various
+                            circumstances of the Company such as policy changes of the location-based service provider
+                            or legal obstacles, the Company may restrict, change or terminate the service fully or
+                            partially.
+                            ② When the service is terminated pursuant to paragraph (1), the Company shall make an
+                            announcement on the internet or notify the subject of personal location information prior to
+                            such termination.
+                            Article 8 (Immediate Notification when Providing Third Parties with Personal Location
+                            Information)
+                            ① The Company shall not provide the personal location information of the subject of personal
+                            location information to a third party without the consent of the relevant subject of
+                            personal location information, and in the case of providing services offered by a third
+                            party, the designated recipient of the personal location information and the purpose of
+                            provision shall be notified to the subject of personal location information in advance, and
+                            shall obtain his/her consent.
+                            ② In case the Company provides personal location information to a third party designated by
+                            the subject of personal location information, the Company shall immediately notify, on each
+                            occasion, the subject of personal location information, of the designated recipient of such
+                            information, the date, time, and purpose of such provision via the communication terminal
+                            device from which the personal location information was collected.
+                            ③ Notwithstanding the forgoing, in the case of the following, the subject of personal
+                            location information shall notify via the predesignated communication terminal device or
+                            e-mail address.
+
+                            1. In case the communication terminal device, for which the personal location information
+                            was collected, does not include functions to receive text, voice or video;
+                            2. In case the subject of personal location information has requested in advance to notify
+                            with a communication terminal device or e-mail address other than the communication terminal
+                            device that collected the personal location information.
+                            Article 9 (Rights Held by the Legal Guardian of Children of Eight Years Old or Younger,
+                            etc.)
+                            ① Where the legal guardian of any of the following persons (hereinafter referred to as
+                            "child of eight years old or younger, etc.") gives consent to the use or provision of
+                            personal location information regarding the child of eight years old or younger, etc., for
+                            the protection of the child's health or safety, the Company shall deem that the child, etc.
+                            themselves consent thereto:
+
+                            1. A child of eight years old or younger;
+                            2. A person under adult guardianship;
+                            3. A person with a mental disorder defined in Article 2 (2) 2 of the Act on Welfare of
+                            Persons with Disabilities, classified as a person with a severe disability defined in
+                            subparagraph 2 of Article 2 of the Act on the Employment Promotion and Vocational
+                            Rehabilitation of Persons with Disabilities (limited to those registered as disabled persons
+                            under Article 32 of the Act on Welfare of Persons with Disabilities).
+                            ② For the protection of the health or safety of a child of eight years old or younger, etc.,
+                            the legal guardian who intends to consent to the use or provision of personal location
+                            information must submit a written consent to the Company along with a document proving that
+                            he/she is the legal guardian.
+                            ③ The legal guardian can exercise all of the rights of the subject of personal location
+                            information if he/she agrees to the use or provision of personal location information for a
+                            child of eight years old or younger, etc.
+                            Article 10 (Purpose of Retention and Period of Use of Personal Location Information)
+                            ① The Company shall retain and use personal location information for the minimum period
+                            necessary to provide location-based services.
+                            ② The Company shall destroy personal location information without delay after one-time or
+                            temporary use from most location-based services. Provided, That when a user posts or stores
+                            personal location information along with posts and content on the Company’s service, such as
+                            in the ‘GeoTagging’ service, the personal location information shall be stored together
+                            during the retention period of the posts and content.
+                            Article 11 (Compensation for Damage)
+                            Where a subject of personal location information suffers damage because the Company has
+                            violated Articles 15 through 26, he/she may claim damages against the Company. In such
+                            cases, the Company shall not be exempt from liabilities unless it proves that there was no
+                            intention or negligence on its part.
+                            Article 12 (Mediation in Disputes)
+                            ① Where the parties to a dispute related to location information fail to reach an agreement
+                            or it is impossible to reach an agreement, the Company may file a petition for adjudication
+                            with the Korea Communications Commission.
+                            ② Where the parties to a dispute related to location information fail to reach an agreement
+                            or it is impossible to reach an agreement, the Company or the subject of personal location
+                            information may file a petition for mediation with the Personal Information Dispute
+                            Mediation Committee established under the Personal Information Protection Act.
+                            Article 13 (Contact and Person Responsible for Location Information)
+                            ① Name, address and contact information of the Company are as follows:
+
+                            - Name of Company: NAVER Corporation
+                            - Address: NAVER 1784, 95, Jeongjail-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of
+                            Korea (postal code: 13561)
+                            - Telephone number: 1588-3820
+                            ② The company is striving to protect the rights of the subject of personal location
+                            information, including the handling of complaints that users have in the process of using
+                            the service, by designating a person responsible for managing location information.
+
+                            - Person responsible for managing location information: David Lee, CPO/DPO
+                            - E-mail : Contact us
+                            Addendum
+                            Effective date of Article 1
+                            The previous terms and conditions that were in effect from April 27, 2022 will be replaced
+                            by these terms and conditions, and such terms will be applied from MAY 18, 2022.
+                        </div>
+                        </third>
+                        <div class="fourth">
+                            <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)">
+                            <div class="accept">Receive promotional information<span class="green_font">(Optional)</span></div>
+                            <div class="terms_info">
+                                You can receive various information such as events and benefits provided by NAVER via mobile phone (NAVER app notifications or text messages). Some services (those run under a separate membership system or used through additional subscriptions after joining NAVER) may require separate consent, in which case an additional notice will be provided and consent obtained.
+                            </div>
+                            <div id="termsError" class="error"></div>
+                        </div>
+        </section>
+        <div class="btn_area">
+            <button class="cancel" onclick="move_naver()">
+                취소
+            </button>
+
+            <button class="next" onclick="chk_terms_func()">
+                확인
+            </button>
+
+
+        </div>
+        <div class="group_join">회사, 동아리 등 단체에서 사용할 ID가 필요하세요?<a href="#">단체 회원 가입</a></div>
+
+        <footer>
+            <div class="fot_top">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">책임의한계와법적고지</a></li>
+                    <li><a href="#">회원정보 고객센터</a></li>
+                </ul>
+            </div>
+            <div class="fot_bot"><a href="https://naver.com" class="fot_logo"><img src="../img/logo.png" width="63px"
+                        height="11px"></a>naver Copyright NAVER Corp. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+
+</html>

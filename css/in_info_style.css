@@ -1,0 +1,141 @@
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    background: rgb(245, 246, 247);
+}
+.warp_ {
+    width: 500px;
+    margin: auto;
+}
+
+.Logo {
+    height: 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.In_INFO {
+    margin-top: 30px;
+}
+
+.INFO_value {
+    margin-top: 10px;
+    width: 98%;
+    height: 40px;
+    border: 1px solid #999;
+}
+
+.INFO_value::-webkit-input-placeholder {
+    text-align: right;
+}
+
+.In_INFO_date {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.year, .month, .day {
+    width: 29%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.INFO_gender{
+    margin-top: 30px;
+}
+.s_gender{
+    padding: 10px;
+    width: 100%;
+}
+
+.INFO_email{
+    margin-top: 40px;
+}
+
+.con_line{
+    margin-top: 30px;
+}
+
+.contury{
+    width: 100%;
+    padding: 10px
+}
+
+.chk{
+    width: 100%;
+    margin-top: 5px;
+}
+.phone{
+    padding: 10px;
+    width: 69%;
+}
+.submit_btn1, .submit_btn2{
+    padding: 10px;
+    background: rgb(0, 200, 80);
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+.submit_btn1{
+    float: right;
+}
+.certified_number{
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+}
+.submit_btn2 {
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 100%;
+    margin: 30px 0; 
+}
+
+.fot_top ul{
+    padding-left: 20px;
+}
+
+.fot_top ul li{
+    float: left;
+    text-align: center;
+}
+
+.fot_top ul li a{
+    color: #000;
+    font-size: 14px;
+}
+
+.fot_top ul li:nth-child(n+2) {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.fot_top ul li:nth-child(n+2)::after {
+    position: absolute;
+    left: 1px;
+    top: 5px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: gray;
+}
+.fot_bot{
+    text-align: center;
+    font-size: 11px;
+    padding: 30px;    
+}
+
+.error{
+    margin-top: 10px;
+    color:red;
+}
+.checking{
+    margin-top: 10px;
+    color:rgb(0, 200, 80);
+}
