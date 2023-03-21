@@ -227,27 +227,9 @@ document.getElementById("join")
                 alert("가입을 환영합니다.")
                 location.reload();
               }
-              else {
-                alert("전화번호 인증하세요.")
-              }
-            }
-            else {
-              alert("성별을 확인해주세요.")
             }
           }
-          else {
-            alert("생년월일을 확인해주세요.")
-          }
-        }
-        else {
-          alert("이름을 확인해주세요.")
         }
       }
-      else {
-        alert("비밀번호를 확인해주세요.")
-      }
-    }
-    else {
-      alert("아이디를 확인해주세요.")
     }
   })
