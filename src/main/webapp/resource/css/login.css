@@ -1,0 +1,30 @@
+.container {
+    width: 30%;
+    height: 230px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info {
+    line-height: 50px;
+}
+
+.input_info {
+    display: left;
+    text-align: left;
+    margin-left: 60px;
+}
+
+input {
+    width: 445px;
+    height: 20px;
+}
+
+.btn_login {
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
